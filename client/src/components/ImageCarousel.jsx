@@ -56,9 +56,3 @@ const ImageCarousel = ({ images, interval = 8000 }) => {
 };
 
 export default ImageCarousel;
-
-//<div className="menu-preview-items">
- //                       <div className="menu-preview-item"><img src="https://www.thespruceeats.com/thmb/H0YjdoMIhz0VqvbQskQYq3VWnqo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/BakedStuffedLobster-TheSpruce_DianaChistruga-3fcb6301491a4be193ecf40d0735e8d1.jpg" alt="Dish 1" /></div>
-  //                      <div className="menu-preview-item"><img src="https://khni.kerry.com/wp-content/uploads/2019/02/Restaurant-meal.jpg" alt="Dish 2" /></div>
-  //                      <div className="menu-preview-item"><img src="https://media.istockphoto.com/id/911978890/photo/delicious-gourmet-rack-of-lamb-recipe.jpg?s=612x612&w=0&k=20&c=gkkQOmv7DKrX4zQ_PFcR-M1CtdvMiwBjSNj3QnZlc70=" alt="Dish 3"/></div>
-    //                </div>

@@ -27,7 +27,7 @@ function ReservationForm() {
                 return;
             }
             
-            await axios.post('http://localhost:5000/api/bookings', {
+            await axios.post(`${process.env.REACT_APP_API_URL}/api/bookings`, {
                 name,
                 phone: phoneNumber,
                 email,

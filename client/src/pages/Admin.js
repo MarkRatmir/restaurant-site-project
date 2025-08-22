@@ -9,7 +9,7 @@ function Admin() {
         try {
             const token = localStorage.getItem("token");
             const res = await axios.put(
-                `http://localhost:5000/api/bookings/${id}`,
+                `${process.env.REACT_APP_API_URL}/api/bookings/${id}`,
                 { status: "approved" },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -26,7 +26,7 @@ function Admin() {
         try {
             const token = localStorage.getItem("token");
         const res = await axios.put(
-            `http://localhost:5000/api/bookings/${id}`,
+            `${process.env.REACT_APP_API_URL}/api/bookings/${id}`,
             { status: "rejected" },
             { headers: { Authorization: `Bearer ${token}` } }
             );
@@ -42,7 +42,7 @@ function Admin() {
     const deleteBooking = async (id) => {
         try {
             const token = localStorage.getItem("token");
-            await axios.delete(`http://localhost:5000/api/bookings/${id}`,
+            await axios.delete(`${process.env.REACT_APP_API_URL}/api/bookings/${id}`,
                 { headers: { Authorization: `Bearer ${token}` }}
             );
 
@@ -56,7 +56,7 @@ function Admin() {
         const fetchBookings = async () => {
             try {
                 const token = localStorage.getItem("token");
-                const res = await axios.get("http://localhost:5000/api/bookings", {
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/bookings`, {
                     headers: { Authorization: `Bearer ${token}`}
                 });
                 setBookings(res.data);
