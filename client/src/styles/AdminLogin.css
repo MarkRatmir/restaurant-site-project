@@ -1,0 +1,28 @@
+.admin-login-form {
+    justify-content: center;
+    display: flex;
+    padding: 10rem;
+    align-items: center;
+}
+
+.admin-login-form input,
+.admin-login-form button {
+    padding: 0.75rem 1rem;
+    border: none;
+    margin: 0.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.admin-login-form button {
+    background-color: rgb(42, 42, 42);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.admin-login-form button:hover {
+    transform: scale(1.1);
+    background-color: rgb(79, 79, 79);
+}

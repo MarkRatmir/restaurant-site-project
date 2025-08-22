@@ -1,0 +1,99 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.category-heading {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    color: white;
+}
+
+.category-heading .line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 1rem;
+}
+
+.category-heading h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+}
+
+.food-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f9c951;
+    padding-bottom: 1rem;
+}
+
+.food-item {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.food-item .food-name {
+    text-transform: uppercase;
+    font-size: 1.15rem;
+}
+
+.food-item .food-description {
+    color: white;
+}
+
+.menu-page-banner {
+    position: relative;
+    background-image: url('https://wallpapers.com/images/featured/restaurant-background-2ez77umko2vj5w02.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+}
+
+.menu-page-banner .menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.menu-page-banner h1 {
+    animation: slideIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-overlay {
+    animation: fadeIn 1.2s ease forwards;
+    opacity: 0;
+}
